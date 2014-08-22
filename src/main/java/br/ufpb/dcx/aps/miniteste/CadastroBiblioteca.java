@@ -15,16 +15,16 @@ public class CadastroBiblioteca {
 		this.dados.add(info);
 	}
 
-	public void cadastra(TipoCadastro tipo, String nome, String numero) {
+	public void cadastra(TipoCadastro tipo, String nome, String matricula) {
 		String result = "";
 
 		switch (tipo) {
 		case ALUNO:
-			result += "Nome: " + nome + "\n" + "Número: " + numero + "\n"
+			result += "Nome: " + nome + "\n" + "Matricula: " + matricula + "\n"
 					+ "Categoria: " + "Aluno";
 			break;
 		case PROFESSOR:
-			result += "Nome: " + nome + "\n" + "Número: " + numero + "\n"
+			result += "Nome: " + nome + "\n" + "Matricula: " + matricula + "\n"
 					+ "Categoria: " + "Professor";
 			break;
 		}

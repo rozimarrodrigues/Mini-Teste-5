@@ -17,14 +17,14 @@ public class CadastroBibliotecaTest {
 	}
 
 	@Test
-	public void cadastraClienteNormalTest(){
+	public void cadastraAlunoTest(){
 		this.cadastro.cadastra(TipoCadastro.ALUNO,"Rozimar", "80921004");
-		assertEquals("Nome: Rozimar\nNúmero: 80921004\nCategoria: Aluno", this.cadastro.getCadastro(0));
+		assertEquals("Nome: Rozimar\nMatricula: 80921004\nCategoria: Aluno", this.cadastro.getCadastro(0));
 	}
 
 	@Test
-	public void cadastraClienteVipTest(){
+	public void cadastraProfessorTest(){
 		this.cadastro.cadastra(TipoCadastro.PROFESSOR,"Rodrigo", "87931084");
-		assertEquals("Nome: Rodrigo\nNúmero: 87931084\nCategoria: Professor", this.cadastro.getCadastro(0));
+		assertEquals("Nome: Rodrigo\nMatricula: 87931084\nCategoria: Professor", this.cadastro.getCadastro(0));
 	}
 }
