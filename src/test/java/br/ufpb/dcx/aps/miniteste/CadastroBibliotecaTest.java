@@ -27,4 +27,10 @@ public class CadastroBibliotecaTest {
 		this.cadastro.cadastra(TipoCadastro.PROFESSOR,"Rodrigo", "87931084");
 		assertEquals("Nome: Rodrigo\nMatricula: 87931084\nCategoria: Professor", this.cadastro.getCadastro(0));
 	}
+	
+	@Test
+	public void cadastraFuncionarioTest(){
+		this.cadastro.cadastra(TipoCadastro.FUNCIONARIO,"João", "11521017");
+		assertEquals("Nome: João\nMatricula: 11521017\nCategoria: Funcionario", this.cadastro.getCadastro(0));
+	}
 }
